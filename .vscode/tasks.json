@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Assemble and Link",
+            "type": "shell",
+            "command": "as exit.s -o exit.o && clang -o exit exit.o -e _start",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
