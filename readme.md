@@ -4,6 +4,14 @@
 - [] support for 64bit x86 and 32bit x86
 - [] how to build it at once to make it work on mac and linux - custom build script? e.g.
 
+# table of content:
+- [how to build](#how-to-build)
+- [executables](#executables)
+- [Intel 80386 Architecture Registers](#intel-80386-architecture-registers)
+- [to run ./analyze_elf.sh](#to-run-analyze_elfsh)
+
+
+
 ## how to build
 - table here with all the files and their purpose and how to build them
 
