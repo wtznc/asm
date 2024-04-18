@@ -1,22 +1,48 @@
-# how to build
+## todo:
+- [] readme section listing all the files, their purpose and how to build and run them
+- [] a new section listing differences between registers among 32bit and 64bit x86
+- [] support for 64bit x86 and 32bit x86
+- [] how to build it at once to make it work on mac and linux - custom build script? e.g.
+
+## how to build
+- table here with all the files and their purpose and how to build them
+
+
 
 ## executables
 ```docker build -t asm-app . && docker run --rm asm-app```
 
-## to run ./analyze_macho.sh 
 
-$: ```chmod +x analyze_macho.sh```
+### Intel 80386 Architecture Registers
 
-$: ```./analyze_macho.sh exit {or any executable file} ```
+#### General-Purpose Registers (GPRs)
+- **EAX** - Accumulator Register
+- **EBX** - Base Register
+- **ECX** - Count Register
+- **EDX** - Data Register
+- **ESI** - Source Index
+- **EDI** - Destination Index
+- **EBP** - Base Pointer
+- **ESP** - Stack Pointer
 
-32bit x86 supports multiple registers:
-- eax,ebx,ecx,edx,esi,edi
-- ax,bx,cx,dx,si,di
-- al,bl,cl,dl
+#### Segment Registers
+- **CS** - Code Segment
+- **DS** - Data Segment
+- **SS** - Stack Segment
+- **ES** - Extra Segment
+- **FS** - More Segment
+- **GS** - Another Segment
+
+#### Special Registers
+- **EIP** - Instruction Pointer
+- **EFLAGS** - Flags Register
+
 
 
 64bit x86 supports multiple registers:
-- rax,rbx,rcx,rdx,rsi,rdi
-- r8,r9,r10,r11,r12,r13,r14,r15
+- todo: list them here
+
 
 ## to run ./analyze_elf.sh
+
+
