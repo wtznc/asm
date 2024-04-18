@@ -1,6 +1,5 @@
 # docker build -t asm-app . && docker run --rm asm-app
 
-
 .section .data
 hello_msg:
     .ascii "Hello, world!\n"
@@ -18,5 +17,5 @@ _start:
 
     # Exit with status code 49
     movl $1, %eax          # system call number (sys_exit)
-    movl $49, %ebx         # exit status
+    movl $41, %ebx         # exit status
     int $0x80              # invoke system call
