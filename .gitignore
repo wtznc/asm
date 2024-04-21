@@ -1,2 +1,4 @@
 exit.ld*
 *.o
+dict.md
+.DS_Store
